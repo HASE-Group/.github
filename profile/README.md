@@ -1,4 +1,12 @@
+# Welcome to the GitHub HASE repository
 
+HASE is a Hierarchical computer Architecture design and Simulation Environment. Originally developed at the University of Edinburgh to support, through simulation, the visualisation of activities taking place inside computers as they execute programs. HASE allows for the rapid development and exploration of computer architectures at multiple levels of abstraction, encompassing both hardware and software. HASE produces a simulation trace file which can be used to animate the on-screen display of the model to show data movements, parameter value updates, state changes, etc.
+
+HASE is available free of charge to individuals for personal use, academic institutions, and to other organisations that wish to use it for internal, non-commercial, non-profit educational and/or research purposes. HASE-III is a Java version of HASE that runs on Linux, Windows and MAC OSX.
+
+In addition to hosting HASE-III, this group of repositories also contains a number of computer architecture simulation models for use with HASE-III. They are appropriate for use as lecture demonstrations or for practical exercises. Guidance on building models can be found in the HASE User Guide.
+
+The original documentation hosted by The University of Edinburgh can be found here: https://homepages.inf.ed.ac.uk/rni/hase/
 
 ## Downloading, Installing, and using HASE
 
@@ -6,9 +14,6 @@ Using one of the download-able HASE models requires you:
 to be able to run HASE
 to have your own copy of the model files
 The download-able version of HASE includes both the code for HASE and an installer that works with Linux, Windows, MACs and 32 and 64-bit Intel MACs.
-
-The latest version of HASE is version 3.8. Version 3.8:
-
 
 ### Requirements
 
@@ -22,7 +27,7 @@ System Requirements:
 - Java Runtime Environment 1.5 or newer
 - Compiler Requirements (one of)
 - GCC (g++)
--Microsoft Visual Studio
+- Microsoft Visual Studio
 
 Environment Requirements for Linux/OSX:
 - To check that a symbolic link exists to java, type:  java -version in a Terminal window
@@ -46,15 +51,19 @@ For OSX g++ comes with XCode. XCode can be obtained free of charge from App Stor
 
 The following link can be used to download the latest version of HASE 3:
 
-https://github.com/HASE-Group/hase_iii_releases/blob/trunk/Setup_HASE_3.8.0.5.jar
+    https://github.com/HASE-Group/hase_iii_releases/blob/trunk/installer/HASEIII_Setup.jar
+
+Alternative all released downloads can be found in this reposity, the latest in the 'trunk'.
+
+    https://github.com/HASE-Group/hase_iii_releases
 
 ### Installation
 
-HASE is available in the form of a jar file that includes its own installer. The most recent version (June 2020) is 3.8.
+HASE is available in the form of a jar file that includes its own installer.
 
 To install HASE-III, either double click on the .jar file to start the installer (if supported by the operating system of the target machine), or execute the following from a terminal:
 
-    java -jar Setup_HASE_3.8.0.1.jar
+    java -jar HASEIII_Setup.jar
 
 Download the latest installer into an appropriate directory.
 
@@ -62,21 +71,21 @@ Enter directory containing downloaded installer:
 
     cd /Directory_Containing_Jar_File/
 
-If you have root access runn the installer as root:
+If you have root access run the installer as root:
 
-    sudo java -jar Setup_HASE_3.8.0.1.jar
+    sudo java -jar HASEIII_Setup.jar
 
 Follow the installer instructions, selecting 'Install for Everyone' on the option page.
 
 If you do not have root access:
 
-Run the installer:   java -jar Setup_HASE_3.8.0.1.jar
+Run the installer:   java -jar HASEIII_Setup.jar
 
 Follow the installer instructions, selecting Select 'Install for Just Me' in the installation options. Make sure you choose an appropriate installation directory (e.g. not /opt in MAC OS X). After the installer finishes in this mode, you will have to make your own alias to /HaseInstallDirectory/bin/Hase to be able to run Hase (e.g. in .bash_profile).
 
 ### Model Files
 
-A collection of "official" models are provided in the https://github.com/HASE-Group/models.git repository along with associated documentation.
+A collection of "official" models are provided in the https://github.com/HASE-Group/hase_iii_models repository along with associated documentation.
 
 
 Each model is a git sub-module therefore when cloning this repository with git the --recurse-submodules should be used. Alternatively individual models can be cloned from individual model repositories.
