@@ -11,9 +11,8 @@ The original documentation hosted by The University of Edinburgh can be found he
 ## Downloading, Installing, and using HASE
 
 Using one of the download-able HASE models requires you:
-to be able to run HASE
-to have your own copy of the model files
-The download-able version of HASE includes both the code for HASE and an installer that works with Linux, Windows, MACs and 32 and 64-bit Intel MACs.
+- to be able to run HASE
+- to have your own copy of the model files
 
 ### Requirements
 
@@ -103,7 +102,7 @@ Selecting the parameters tab in the Project Inspector panel allows changes in th
 
 ## Documentation 
 
-A User Guide for HASE can be accessed via the Help command in the Menu Bar (select Index). This User Guide is also available on the HASE website at HASE User Guide. The latter will generally be more up to date, since updating the Guide in the HASE application requires a new release of HASE itself.
+A User Guide for HASE can be accessed via the Help command in the Menu Bar (select Index). This User Guide is also available here [User Guide](https://github.com/HASE-Group/hase_iii_userguide/blob/main/README.md). The latter will generally be more up to date, since updating the Guide in the HASE application requires a new release of HASE itself.
 
 ### Disclaimers, Etc
 
