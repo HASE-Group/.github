@@ -18,19 +18,19 @@ The download-able version of HASE includes both the code for HASE and an install
 ### Requirements
 
 Prior to downloading and installing HASE, please ensure that your system satisfies the following requirements:
-Operating System - any of:
+Supported Operating Systems:
 - A Desktop Linux Operating System
 - OSX
-- Microsoft Windows Vista/7/8/10/11
+- Microsoft Windows 10, or 11
 
 System Requirements:
-- Java Runtime Environment 1.5 or newer
+- Java Runtime Environment (JRE) 8 or newer
 - Compiler Requirements (one of)
-- GCC (g++)
-- Microsoft Visual Studio
+    - GCC (g++) (if running in MacOS or Linux)
+    - Microsoft Visual Studio (if running HASE on Windows)
 
 Environment Requirements for Linux/OSX:
-- To check that a symbolic link exists to java, type:  java -version in a Terminal window
+- To check that a symbolic link exists to java, type: java -version in a Terminal window
     the result should be:  java version "1.x.x.x"
 - To check that a symbolic link exists to GCC, use:  g++ --version
 the result should be:  g++ (GCC) 3.x.x.xxxxxxxxx (OS information)
@@ -41,7 +41,7 @@ Environment Requirements for Windows:
  java -version
 the result should be:  java version "1.x.x.x"
 
-Check that PATH includes an entry pointing to Visual Studio (e.g. to VS140COMNTOOLS)
+Visual Studio should automatically be found, when trying to compile an error will be listed if it was not.
 
 ### Addition Notes (OSX)
 
@@ -61,11 +61,9 @@ Alternative all released downloads can be found in this reposity, the latest in 
 
 HASE is available in the form of a jar file that includes its own installer.
 
-To install HASE-III, either double click on the .jar file to start the installer (if supported by the operating system of the target machine), or execute the following from a terminal:
-
-    java -jar HASEIII_Setup.jar
-
 Download the latest installer into an appropriate directory.
+
+To install HASE-III, either double click on the .jar file to start the installer (if supported by the operating system of the target machine), or execute the following from a terminal:
 
 Enter directory containing downloaded installer: 
 
@@ -77,18 +75,17 @@ If you have root access run the installer as root:
 
 Follow the installer instructions, selecting 'Install for Everyone' on the option page.
 
-If you do not have root access:
+If you do not have root access, run the installer without sudo:
 
-Run the installer:   java -jar HASEIII_Setup.jar
-
+    java -jar HASEIII_Setup.jar
+    
 Follow the installer instructions, selecting Select 'Install for Just Me' in the installation options. Make sure you choose an appropriate installation directory (e.g. not /opt in MAC OS X). After the installer finishes in this mode, you will have to make your own alias to /HaseInstallDirectory/bin/Hase to be able to run Hase (e.g. in .bash_profile).
 
 ### Model Files
 
 A collection of "official" models are provided in the https://github.com/HASE-Group/hase_iii_models repository along with associated documentation.
 
-
-Each model is a git sub-module therefore when cloning this repository with git the --recurse-submodules should be used. Alternatively individual models can be cloned from individual model repositories.
+Each Model is a git sub-module, therefore when cloning this repository --recurse-submodules should be used. Alternatively individual models can be cloned from individual model repositories.
 
 ### Running HASE3
 
